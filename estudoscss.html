@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%; padding: 0%; box-sizing: border-box;/*reset da pagina*/
+        }
+        .kj{
+            background-color: purple; height: 500px; width: 500px;/*mudança de cor de fundo*/
+            animation-name: animacao;/*nome da animação criada*/
+            animation-duration: 6s;/*duração da animação*/
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+        }
+        .kj2{
+            background-color: purple; height: 500px; width: 500px;
+            animation-name: animacao2;
+            animation-duration: 6s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+        }
+        .kj3{
+            background-color: purple; height: 500px; width: 500px;
+            animation-name: animacao3;
+            animation-delay: 1s;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
+        .kj4{
+            background-color:purple; height: 500px; width: 500px;
+            animation-name: animacao4;
+            animation-duration: 6s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+        }
+        #pah{
+            display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-template-rows:100vh 80vh;
+        }
+        @keyframes animacao2{
+            0%{background-color: purple; width: 500px; height: 500px;}/*a animação comecará com a cor roxa*/
+            25%{background-color: yellow; width: 250px; height: 250px;}/**/
+            50%{background-color: rgb(255, 0, 0); width: 100px; height: 100px;}
+            100%{background-color: teal; width: 50px; height: 50px;}
+        }
+        @keyframes animacao{
+            0%{background-color: purple; width: 500px; height: 500px;}/*a animação comecará com a cor roxa*/
+            25%{background-color: yellow; width: 250px; height: 250px;}/**/
+            50%{background-color: rgb(255, 0, 0); width: 100px; height: 100px;}
+            100%{background-color: teal; width: 50px; height: 50px;}
+        }
+        @keyframes animacao3{
+            0%{background-color: purple; width: 500px; height: 500px;}
+            25%{background-color: yellow; width: 250px; height: 250px;;}
+            50%{background-color: black; width: 400px; height: 400px;}
+            100%{background-color: blue; width: 50px; height: 50px;}
+        }
+        @keyframes animacao4{
+            0%{background-color: purple; width: 500px; height: 500px;}
+            25%{background-color: salmon; width: 250px; height: 250px;}
+            50%{background-color: tomato; width: 80px; height: 200px;}
+            100%{background-color: yellowgreen; width: 200px; height: 800px;}
+        }
+    </style>
+</head>
+
+<body>
+    <section id="pah">
+        <div class="kj" onclick="clicar()"></div>
+        <div class="kj2"></div>
+        <div class="kj3"></div>
+        <div class="kj4"></div>
+    </section>
+    <script>
+        /*var g = document.querySelector('div.kj')
+        function clicar(){
+            g.style.background='red'
+        }*/
+        var hora = new Date().getHours()
+        alert(hora)
+    </script>
+</body>
+</html>
